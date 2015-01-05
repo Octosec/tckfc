@@ -1,7 +1,7 @@
 tckfc
 =====
 
-TrueCrypt key file cracker.
+This tool seeks TrueCrypt key file using combinations of provided key files with known password.
 
 Usage
 =====
