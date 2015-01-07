@@ -170,8 +170,10 @@ class TCKFC(object):
     def __init_worker(self):
         signal.signal(signal.SIGINT, signal.SIG_IGN)
 
-
-if __name__ == "__main__":
+def main():
+    """
+    Main function
+    """
     # Init the root logger with log format
     log_formatter = logging.Formatter("[%(asctime)s] [%(levelname)-7.7s] [%(message)s]")
     root_logger = logging.getLogger(__name__)  
@@ -205,4 +207,7 @@ if __name__ == "__main__":
     except TCKFCError:
         sys.exit(1)
     else:
-        root_logger.debug("Cracking is completed")
+        root_logger.debug("Cracking is completed")    
+
+if __name__ == "__main__":
+    main()
