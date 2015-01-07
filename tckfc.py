@@ -12,7 +12,7 @@ import functools
 import signal
 import time
 
-__version__ = "0.1.0"
+__version__ = "0.2.0"
 
 # TCKFC log handler file
 TCKFC_LOG_FILE = ".tckfc.log"
