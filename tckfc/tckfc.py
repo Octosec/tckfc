@@ -12,6 +12,7 @@ import functools
 import signal
 import time
 import tempfile
+import shutil
 
 __version__ = "0.2.0"
 
@@ -136,9 +137,11 @@ class TCKFC(object):
         except KeyboardInterrupt:
             self.pool.terminate()
             self.pool.join()
+            shutil.rmtree(self.mount_point)
         else:
             self.pool.close()
-            self.pool.join()                  
+            self.pool.join()  
+            shutil.rmtree(self.mount_point)                
 
     def __get_key_files(self):
         """
