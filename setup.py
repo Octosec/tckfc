@@ -4,8 +4,8 @@ except ImportError:
     from distutils.core import setup
 
 config = dict(description='Asynchronously TrueCrypt key file brute force tool',
-			long_description=open('README.md').read(),
-	      	author='Halit Alptekin',
+            long_description=open('README.md').read(),
+            author='Halit Alptekin',
             url='https://github.com/Octosec/tckfc', 
             author_email='info@halitalptekin.com', 
             license='MIT',
