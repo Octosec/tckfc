@@ -1,7 +1,7 @@
 tckfc
 =====
 
-This tool seeks TrueCrypt key file using combinations of provided key files with known password.
+This tool seeks asynchronously TrueCrypt key file using combinations of provided key files with provided password.
 
 Usage
 =====
