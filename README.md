@@ -3,6 +3,10 @@ tckfc
 
 This tool seeks asynchronously TrueCrypt key file using combinations of provided key files with provided password.
 
+Installation
+============
+    pip install tckfc
+
 Usage
 =====
 
