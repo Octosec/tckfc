@@ -11,6 +11,7 @@ import multiprocessing
 import functools
 import signal
 import time
+import tempfile
 
 __version__ = "0.2.0"
 
@@ -96,10 +97,9 @@ class TCKFC(object):
         self.key_files_dir = args.keyfiles
         self.tc_file = args.tcfile
         self.password = args.password
-        self.mount_point = args.mountpoint
+        self.mount_point = tempfile.mkdtemp()
         self.combination = args.combination
-        self.pool = multiprocessing.Pool(multiprocessing.cpu_count(), self.__init_worker
-            )
+        self.pool = multiprocessing.Pool(multiprocessing.cpu_count(), self.__init_worker)
 
         # Init the logger
         self.logger = logging.getLogger(__name__)
@@ -170,6 +170,7 @@ class TCKFC(object):
     def __init_worker(self):
         signal.signal(signal.SIGINT, signal.SIG_IGN)
 
+
 def main():
     """
     Main function
@@ -196,7 +197,6 @@ def main():
     parser.add_argument("keyfiles", help="Key directory that contains possible key files", action="store")
     parser.add_argument("tcfile", help="TrueCrypt encrypted file", action="store")
     parser.add_argument("password", help="TrueCrypt decryption key", action="store")
-    parser.add_argument("mountpoint", help="Mount point", action="store")
     parser.add_argument("-c", "--combination", help="Keyfile combinations", default=1, nargs='?', type=int)
 
     # Start
