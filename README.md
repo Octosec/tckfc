@@ -10,12 +10,11 @@ Installation
 Usage
 =====
 
-``python tckfc.py [-h] [-c [COMBINATION]] keyfiles tcfile password mountpoint``
+``tckfc [-h] [-c [COMBINATION]] keyfiles tcfile password``
 
   * **keyfiles:** Possible key files directory
   * **tcfile:** TrueCrypt encrypted file
   * **password:** Password for TrueCrypt file
-  * **mountpoint:** Mount point
 
 Example
 =======
