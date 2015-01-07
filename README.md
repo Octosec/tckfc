@@ -25,13 +25,12 @@ Usage
 Example
 =======
 
-    mkdir mnt
     cp a.pdf keys/
     cp b.doc keys/
     cp c.txt keys/
     cp d.jpg keys/
     cp e.gif keys/
-    python tckfc.py keys/ encrypted.img 123456 mnt/
+    python tckfc.py keys/ encrypted.img 123456
 
 [![Bitdeli Badge](https://d2weczhvl823v0.cloudfront.net/Octosec/tckfc/trend.png)](https://bitdeli.com/free "Bitdeli Badge")
 
