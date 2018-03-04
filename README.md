@@ -1,11 +1,11 @@
 tckfc
 =====
 
-[![Latest Version](https://pypip.in/version/tckfc/badge.svg)](https://pypi.python.org/pypi/tckfc/)
-[![Downloads](https://pypip.in/download/tckfc/badge.svg)](https://pypi.python.org/pypi/tckfc/)
-[![Download format](https://pypip.in/format/tckfc/badge.svg)](https://pypi.python.org/pypi/tckfc/)
-[![Supported Python versions](https://pypip.in/py_versions/tckfc/badge.svg)](https://pypi.python.org/pypi/tckfc/)
-[![License](https://pypip.in/license/tckfc/badge.svg)](https://pypi.python.org/pypi/tckfc/)
+[![Latest Version](https://img.shields.io/pypi/v/tckfc.svg)](https://pypi.python.org/pypi/tckfc/)
+[![Downloads](https://img.shields.io/pypi/dm/tckfc.svg)](https://pypi.python.org/pypi/tckfc/)
+[![Download format](https://img.shields.io/pypi/format/tckfc.svg)](https://pypi.python.org/pypi/tckfc/)
+[![Supported Python versions](https://img.shields.io/pypi/pyversions/tckfc.svg)](https://pypi.python.org/pypi/tckfc/)
+[![License](https://img.shields.io/pypi/l/tckfc.svg)](https://pypi.python.org/pypi/tckfc/)
 
 This tool seeks asynchronously TrueCrypt key file using combinations of provided key files with provided password.
 
